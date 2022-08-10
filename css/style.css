@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #11122a;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+}
+
+#container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    height: 10vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#logo p {
+    font-size: 24pt;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-left: 20px;
+}
+
+#navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navegacao ul li{
+    display: inline;
+}
+
+#navegacao ul a {
+    padding: 20px;
+}
+
+#navegacao #botao {
+    background-color: red;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+
+main {
+    margin-top: 20px;
+}
+
+section#conteudo {
+    width: 40vw;
+    height: 70vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#principal>p {
+    font-size: 4.5em;
+    font-weight: 500;
+    padding: 0px 20px;
+    line-height: 80px;
+}
+
+#descricao>p {
+    margin-top: 15px;
+    padding: 0px 20px;
+    font-size: 1.3em;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+#formulario {
+    margin: 50px 20px;
+}
+
+#formulario #email {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    padding: 12px;
+    width: 30%;
+}
+
+input.btn-enviar {
+    background-color: red;
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    padding: 15px 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+section#image {
+    width: 39vw;
+    height: 70vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+#image>img {
+    width: 35vw;
+}
+
+footer span {
+    color: rgba(255, 255, 255, 0.314);
+    margin-left: 20px;
+    font-size: .9em;
+}
+
+
+
+
+@media only screen and (max-width: 1300px) {
+    #container {
+        width: 90% ;
+    }
+
+    section#conteudo {
+        width: 55%;
+    }
+
+    #principal>p {
+        font-size: 4em;
+        margin-top: 100px;
+    }
+
+    #formulario {
+        margin: 50px 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    section#conteudo {
+        width: 100%;
+    }
+
+    #principal>p {
+        font-size: 4em;
+        margin-top: 100px;
+    }
+    section#image {
+        display: none;
+    }
+}
